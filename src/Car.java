@@ -7,9 +7,9 @@ public class Car {
         start = false;
         go = false;
         speed = 0;
-
     }
 
+    //todo add  public static void main() to test this class
     public Car(boolean start, boolean go, int speed) {
         this.start = start;
         this.speed = speed;
@@ -26,6 +26,7 @@ public class Car {
 
     public void go(boolean start) {
         this.start = start;
+        //TODO you are assigning true to start var here, I believe you need  if (start == true), or simpler: if (start)
         if (start = true)
             go = true;
     }
@@ -35,6 +36,7 @@ public class Car {
     }
 
     public void setSpeed(int speed) {
+        //TODO you are assigning true to go var here, I believe you need  if (go == true), or simpler: if (go)
         if (go = true)
             this.speed = speed;
     }
